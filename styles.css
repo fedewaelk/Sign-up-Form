@@ -49,11 +49,61 @@ body {
 }
 
 .credits
-, a {
+, .credits a {
     color: rgba(255, 255, 255, 90%);
     font-size: 13px;
 }
 
 .right {
     flex: 1;
+    background-color: rgb(245, 245, 245);
+}
+
+.up {
+    padding: 140px 120px 40px 40px;
+}
+
+strong p {
+    font-size: 22px;
+}
+
+form {
+    background-color: white;
+    margin: 0 auto;
+    padding: 10px 20px 10px 40px;
+}
+
+.form-imputs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 250px;
+    height: 20px;
+    border-color: #E5E7EB;
+    border-radius: 6px;
+}
+
+.down {
+    padding: 30px 20px 10px 40px;
+}
+
+button {
+    font-size: 16px;
+    font-weight: 900;
+    background-color: #596D48;
+    color: white;
+    border-color: #E5E7EB;
+    border-radius: 8px;
+    padding: 15px 50px;
+}
+
+.right a {
+    color: #596D48;
 }
