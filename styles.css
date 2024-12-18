@@ -70,7 +70,7 @@ strong p {
 form {
     background-color: white;
     margin: 0 auto;
-    padding: 10px 40px;
+    padding: 10px 40px 40px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -78,7 +78,7 @@ form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 60px;
+    gap:20px 60px;
     justify-content: flex-start;
 }
 
@@ -96,7 +96,30 @@ input {
     height: 30px;
     border: 1px solid #E5E7EB;
     border-radius: 6px;
-    margin: 0 0 20px;
+    outline: none;
+    font-size: 16px;
+}
+
+input:focus {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  }
+
+input:valid {
+    border-color: blue;
+}
+
+input:user-invalid {
+    border-color: red;
+}
+
+.error-message {
+    display: none;
+    color: red;
+    font-size: 12px;
+}
+  
+input:user-invalid + .error-message {
+    display: inline;
 }
 
 .down {
@@ -111,6 +134,11 @@ button {
     border: none;
     border-radius: 8px;
     padding: 15px 50px;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #4A5C3A;
 }
 
 .down a {
